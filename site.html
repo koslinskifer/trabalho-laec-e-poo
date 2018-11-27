@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Sistema de Biblioteca</title>
+	<link rel="stylesheet" type="text/css" href="site.css">
+</head>
+<body onload="pegarLocalizacaoAtual()">
+<header>
+  <nav>
+    <ul>
+      <li><a href="#home" >Home</a></li>
+      <li><a href="#usuario" onclick="tela('usuario')">Cadastro</a></li>
+      <li><a href="#casa" onclick="tela('casa')">casa</a></li>
+      <li><a href="#trabalho" onclick="tela('trabalho')">trabalho</a></li>
+      <li><a href="#escola" onclick="tela('escola')">escola</a></li>
+       <li><a href="#favorito" onclick="tela('favorito')">favorito</a></li>
+      <li><a href="#atualizar" onclick="tela('atualizar')">Editar informação</a></li><!-- edita trabalho/casa/escola/favoritos -->
+    </ul>
+  </nav>
+</header> 
+
+<main>
+  <span id="menu">
+  
+  </span>
+  	<section id="home" class="">
+		 <img src="logofinal.png" alt="menu">
+		 <h2>Entrar</h2>
+
+		 <fieldset class="grupo">
+		  <div class="campo">
+		    <label for="email">E-mail</label><input style="width: 29em" type="text" id="email" required/>
+		 	</div>
+		  <div class="campo">
+		 <label for="senha">Senha</label><input style="width: 29em" type="text" id="senha" required/>
+		 </div>
+		 <div class="campo">
+				<button class = "botao" onclick="entrar()">Entrar</button>
+				</div>
+		</fieldset>
+	</section>
+	<section id="usuario" class="invisivel">
+		<form action="#" method="post">
+			<div class="campo">  
+				<h1>Cadastro</h1>
+			</div>
+    		<fieldset class="grupo">      
+    			<div class="campo">  
+		   			<label for="nome_usuario">Nome</label><input style="width: 29em" type="text" id="nome_usuario" required/>
+		   		</div>
+		   		
+			</fieldset>
+			<fieldset class="grupo"> 
+				<div class="campo">
+					<label for="email_cadastro">E-mail</label><input style="width: 14em" type="text" id="email_cadastro" required/>
+				</div>
+				<div class="campo">
+					<label for="senha_cadastro">Senha</label><input style="width: 14em" type="password" id="matricula" maxlength="8" />
+				</div>
+			</fieldset>
+			<fieldset class="grupo"> 
+				<div class="campo">
+					<label for="senha_cadastro_confirma">Confirmação de Senha</label><input type="password" id="senha_cadastro_confirma" required/><!-- parei aqui -->
+				</div>
+			</fieldset>
+		 	<div class="campo">
+				<button class = "botao" onclick="salvar(2)">Cadastrar</button>
+				<button class = "botao" onclick="">Voltar </button>
+			</div>
+		</form>
+	</section>
+	
+</main>
+<script type="text/javascript" src="site.js"></script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.page:not(:target){
+  display: none;
+}
+
+.page:target{
+  display: block;
+}
+
+header{  
+  background: #eee;
+  height: 100%;
+  left: -200px;
+  position: fixed;
+  transition: all ease-in-out .3s;
+  width: 200px;
+}
+
+header a{
+  border-bottom: solid 1px #DDD;
+  color: #333;
+  display: block;
+  font-weight: bold;
+  padding: 1rem;
+  text-decoration: none;
+}
+
+header ul{
+ list-style: none;
+}
+
+#menu{
+  cursor: pointer;
+  transition: all ease-in-out .3s;
+}
+
+#menu > img{
+  padding-bottom: 20px;
+  width: 25px;
+}
+
+.opened{
+  margin-left: 200px;
+}
+
+main{
+  padding: 2rem;
+}
+
+main p{
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+/******************** Escondendo os seçoes para serem mostradas apenas quando solicitadas */
+.invisivel{
+  display: none;
+}
+/*************************** CSS - tentativa de formulário ******************************/
+fieldset {
+    border: 0;
+}
+
+body, input, select, textarea, button {
+    font-family: sans-serif;
+    font-size: 1em;
+}
+
+.grupo:before, .grupo:after {
+    content: " ";
+    display: table;
+}
+
+.grupo:after {
+    clear: both;
+}
+
+.campo {
+    margin-bottom: 1em;
+}
+
+.campo label {
+    margin-bottom: 0.2em;
+    color: #666;
+    display: block;
+}
+
+fieldset.grupo .campo {
+    float:  left;
+    margin-right: 1em;
+}
+
+.campo input[type="text"],
+.campo input[type="date"],
+.campo input[type="email"],
+.campo input[type="number"],
+.campo input[type="url"],
+.campo input[type="tel"],
+.campo select,
+.campo textarea {
+    padding: 0.2em;
+    border: 1px solid #CCC;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    display: block;
+}
+
+.campo select option {
+    padding-right: 1em;
+}
+
+.campo input:focus, .campo select:focus, .campo textarea:focus {
+    background: #FFC;
+}
+
+.campo label.checkbox {
+    color: #000;
+    display: inline-block;
+    margin-right: 1em;
+}
+
+.botao {
+    font-size: 1.5em;
+    background: #F90;
+    border: 0;
+    margin-bottom: 1em;
+    color: #FFF;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+
+.botao:hover {
+    background: #FB0;
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: none;
+}
+
+.botao, select, label.checkbox {
+    cursor: pointer;
+}
